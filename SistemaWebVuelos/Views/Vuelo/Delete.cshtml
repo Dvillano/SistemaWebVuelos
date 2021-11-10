@@ -1,0 +1,61 @@
+﻿@model SistemaWebVuelos.Models.Vuelo
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>¿Desea eliminar?</h2>
+    @using (Html.BeginForm("Delete", "Vuelo", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Detalle del vuelo</legend>
+            <div>
+                @Html.DisplayNameFor(model => model.Id)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Id)
+            </div>
+
+            <div>
+                @Html.DisplayFor(model => model.Fecha)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Fecha)
+            </div>
+
+            <div>
+                @Html.DisplayNameFor(model => model.Destino)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Destino)
+            </div>
+
+            <div>
+                @Html.DisplayFor(model => model.Origen)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Origen)
+            </div>
+
+            <div>
+                @Html.DisplayFor(model => model.Matricula)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Matricula)
+            </div>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="SI" />
+        </p>
+
+        <p>
+            @Html.ActionLink("Volver al index", "Index", "Vuelo")
+        </p>
+    }
+</body>
+</html>

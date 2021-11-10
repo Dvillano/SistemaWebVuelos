@@ -1,0 +1,50 @@
+﻿body {
+    background-color:black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    background-color: #4F81BD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+li {
+    padding: 10px;
+}
+
+li a {
+    text-decoration: underline;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.opcional {
+    margin: 10px;
+    padding: 10px;
+}
+
+.editable {
+    text-align: center;
+    padding: 15px;
+    flex-grow: 1;
+    background-color: white;
+    color: black;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}

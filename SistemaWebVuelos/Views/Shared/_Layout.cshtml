@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="header">
+        <h1>Sistema VUELOS</h1>
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Vuelos</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main">
+        <div class="opcional">
+            <p>Zona editable opcional</p>
+        </div>
+
+        <div class="editable">
+            @RenderBody()
+        </div>
+    </div>
+
+
+    <footer>
+        <p><i>Info@vuelo.com</i></p>
+    </footer>
+
+</body>
+</html>
