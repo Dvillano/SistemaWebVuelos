@@ -1,6 +1,7 @@
 ﻿body {
     background-color:black;
     color: white;
+    margin: 0;
 }
 
 .header {
@@ -43,8 +44,23 @@ li a {
     color: black;
 }
 
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #4F81BD;
+    padding: 2px;
+}
+
+tr:hover {
+    background: #EAEBEC;
+    transition: all 0.5s ease 0s;
+}
+
 footer {
     margin-top: 20px;
     width: 100%;
     text-align: center;
 }
+

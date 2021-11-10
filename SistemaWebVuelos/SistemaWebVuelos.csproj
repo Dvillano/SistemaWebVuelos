@@ -103,6 +103,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VueloController.cs" />
     <Compile Include="Data\DbVueloContext.cs" />
+    <Compile Include="Data\VueloInitializer.cs" />
+    <Compile Include="Filters\MyFilterAction.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -113,6 +115,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Repository\AdmVuelo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -129,6 +132,7 @@
     <Content Include="Views\Vuelo\Detail.cshtml" />
     <Content Include="Views\Vuelo\Delete.cshtml" />
     <Content Include="Views\Vuelo\BuscarPorDestino.cshtml" />
+    <Content Include="Views\Vuelo\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

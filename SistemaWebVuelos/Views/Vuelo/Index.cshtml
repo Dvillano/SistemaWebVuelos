@@ -16,23 +16,27 @@
             <th>@Html.DisplayNameFor(model => model.Origen)</th>
             <th>@Html.DisplayNameFor(model => model.Matricula)</th>
             <th>Detalle</th>
+            <th>Editar</th>
             <th>Eliminar</th>
         </tr>
 
         @foreach (var item in Model)
         {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.Fecha) </td>
-            <td>@Html.DisplayFor(modelItem => item.Destino)</td>
-            <td>@Html.DisplayFor(modelItem => item.Origen)</td>
-            <td>@Html.DisplayFor(modelItem => item.Matricula)</td>
-            <td>
-                @Html.ActionLink("Detalle", "Detail", new { id = item.Id })
-            </td>
-            <td>
-                @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
-            </td>
-        </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Fecha) </td>
+                <td>@Html.DisplayFor(modelItem => item.Destino)</td>
+                <td>@Html.DisplayFor(modelItem => item.Origen)</td>
+                <td>@Html.DisplayFor(modelItem => item.Matricula)</td>
+                <td>
+                    @Html.ActionLink("Detalle", "Detail", new { id = item.Id })
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id })
+                </td>
+                <td>
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+                </td>
+            </tr>
         }
     </table>
 </body>
